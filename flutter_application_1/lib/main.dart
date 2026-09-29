@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mapbox_maps_flutter/mapbox_maps_flutter.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'map_screen.dart';
+import 'screens/location_map_screen.dart';
+
 
 const mapboxToken = String.fromEnvironment('ACCESS_TOKEN');
  
@@ -58,7 +59,7 @@ class _NeshtoPageState extends State<NeshtoPage> {
             onPressed:(){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => const MapScreen())
+                MaterialPageRoute(builder: (_) => const LocationsMapScreen())
               );  
             },
           ),
